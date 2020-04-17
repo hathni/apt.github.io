@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -15,8 +16,8 @@
 <div id="home">
   <div class="landing">
     <h1>Story of my life </h1>
-    <h3>A journey in past 21 years</h3>
-    <a href="#scroll" class="btn btn-default btn-lg">lets begin !</a>
+    <h3>A journey in past 21 years</h3><br><br><br>
+    <a href="#scroll" class="btn btn-default btn-lg">lets begin!</a>
   </div>
 </div>
 
@@ -24,35 +25,39 @@
 <div class="container">
   <div class="row" >
     <div class="col-sm-6" id="scroll">
-      <img src="img/bootstrap.png">
+      <img src="https://image.freepik.com/free-vector/cute-baby-elephant-cartoon_78094-25.jpg">
     </div>
     <div class="col-sm-6">
       <h2>All About Me</h2>
-      <p class="lead"> lorem ipsum askjlf bhasfh jkasbf jasbf akjsfsajkf asjkf ksajf </p>
+      <p class="lead"> I am a bad guy  </p><br>
+      <p class="lead"> the site is under maintainence </p>
     </div>
   </div>
 </div>
 </div>
-
+<!--
 <div class="padding">
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6">
-      <h1>hello</h1>
+      <img src="">
     </div>
     <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6">
-      <h1>hello</h1>
+      <img src="">
     </div>
     <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6">
-      <h1>hello</h1>
+      <img src="">
     </div>
     <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6">
-      <h1>hello</h1>
+      <img src="">
+    </div>
+    <div class="col-sm-6 col-lg-3 col-md-3 col-xs-6">
+      <img src="">
     </div>
   </div>
 </div>
 </div>
-
+-->
 
 
 <div id="fixed"> 
@@ -64,17 +69,76 @@
 <div class="container">
   <div class="row" >
     <div class="col-sm-6">
-      <h2>All About Me</h2>
-      <p class="lead"> lorem ipsum askjlf bhasfh jkasbf jasbf akjsfsajkf asjkf ksajf </p>
+      <h1>Happy Birthday Pumpkin</h1>
+      <p class="lead"> as such toh mai kuch kar nahi paaya. but leave all of that its your birthday, happy birthday dear</p>
     </div>
-    <div class="col-sm-6">
-      <img src="img/bootstrap.png">
+    
     </div>
     
   </div>
 </div>
 </div>
 
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-xs-4"><a href="#1"><img src="https://media.images.yourquote.in/post/large/0/0/0/764/xaXB6644.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://media.images.yourquote.in/post/large/0/0/9/809/4P6v5504.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://media.images.yourquote.in/post/large/0/0/9/861/4q9l1620.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://media.images.yourquote.in/post/large/0/0/9/981/M2E99368.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="https://media.images.yourquote.in/post/large/0/0/12/67/4wjp8253.jpg" class="img-responsive"></a></div>
+          </div>
+
+          
+
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  
+  
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+  
+</script>
 
 </body>
 </html>
