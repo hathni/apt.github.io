@@ -1,0 +1,39 @@
+﻿html, body {
+	height: 100%;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+#home {
+	background: url(https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+.landing {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.landing h1{
+	font-size: 500%;
+	font-weight: 700;
+}
+
+.padding{
+	padding: 50px;
+} 
+.padding img{
+	width: 100%
+}
+
+#fixed{
+	background: url(img/background.jpg) no-repeat center center fixed ;
+	display: table;
+	height: 50%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
