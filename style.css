@@ -17,6 +17,14 @@
 	text-align: center;
 	vertical-align: middle;
 }
+.apt {
+	text-align: center;
+	vertical-align: middle;
+}
+.apt h1 {
+	font-family: Bookman, serif;
+	color: #ede609
+}
 .landing h1{
 	font-size: 500%;
 	font-weight: 700;
@@ -59,7 +67,6 @@
     }
     @media all and (transform-3d), (-webkit-transform-3d) {
       > .item{
-        // use your favourite prefixer here
         transition: 500ms ease-in-out left;
         transition: 500ms ease-in-out all;
         backface-visibility: visible;
