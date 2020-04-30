@@ -11,6 +11,15 @@
 	position: relative;
 	width: 100%;
 	background-size: cover;
+
+}
+#bottom {
+  background: url(https://www.desktopbackground.org/p/2013/05/23/580757_love-breakup-wallpapers-for_1280x800_h.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
 }
 .landing {
 	display: table-cell;
@@ -26,10 +35,16 @@
 	color: #ede609
 }
 .landing h1{
-	font-size: 500%;
-	font-weight: 700;
-  font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 8vw;
+	font-weight: 500vw;
+  font-family: Zapf Chancery, cursive;
   color: #e0d12b
+}
+.landing h2{
+  font-size: 5vw;
+  font-weight: 500vw;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  color: #6b6109
 }
 
 .padding{
